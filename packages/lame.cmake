@@ -1,5 +1,6 @@
 ExternalProject_Add(lame
-    GIT_REPOSITORY git://anonscm.debian.org/pkg-multimedia/lame.git
+    URL "http://download.sourceforge.net/lame/lame-3.100.tar.gz"
+    URL_HASH SHA256=ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b1da1e
     UPDATE_COMMAND ""
     PATCH_COMMAND ${DEBPATCH}
     CONFIGURE_COMMAND ${EXEC} <SOURCE_DIR>/configure
